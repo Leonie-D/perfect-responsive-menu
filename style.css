@@ -3,8 +3,14 @@
 }
 
 body {
-	overflow: hidden;
 	font-family: sans-serif;
+}
+
+@media screen and (max-width: 35.999em) {
+    /* Plutôt que de faire une classe, création d'un attribut data (bonnes pratiques) */
+    body[data-burger="true"] {
+        overflow: hidden;
+    }
 }
 
 @media ( max-width: 40rem ) {
